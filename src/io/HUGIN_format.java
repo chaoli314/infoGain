@@ -17,7 +17,7 @@ import bayesian_networks.*;
 public class HUGIN_format {
 	public static BayesianNetwork load(String filename) {
 		
-		String netName = filename.substring(filename.lastIndexOf("/") + 1, filename.indexOf(".net"));
+		String netName = filename.substring(filename.lastIndexOf("/") + 1, filename.length() );
 		Map<String, Integer> variableIndex = new TreeMap<>();
 		List<List<String>> LsLsState = new ArrayList<>();
 		List<Factor> factors = new ArrayList<>();
